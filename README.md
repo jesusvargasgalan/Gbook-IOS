@@ -15,7 +15,7 @@ Aquí el usuario podrá formar parte de la red social Gbook con sus respectivos 
 <h1>Pantalla principal</h1>
 En esta pantalla se veran todos los post creados por los usuarios,como se aprecia se ve el icono de avatar seleccionado por el usuario,su nombre,si el post es de tipo compra u opinion y la imagen del juego (en este caso uso imágenes predeterminadas)
 
-<img src=./Gbook/Imagenes/8.PNG width=200px>
+<img src=./Gbook/Imagenes/4.PNG width=200px>
 
 <h1>Dentro del post</h1>
 Esta pantalla tiene la particularidad de que podremos añadir comentarios y likes a las fotos
@@ -27,7 +27,7 @@ Esta pantalla tiene la particularidad de que podremos añadir comentarios y like
 <h1>Gbookear</h1>
 Aquí el usuario puede o bien elegir el juego desde el Pickerview que se va rellenando con datos que han introducido otros usuarios o bien puede introducir su juego propio, luego hay dos botones que checkean el tipo de post que quiere añadir,si bien es de Opinion para saber que piensan los demás usuarios o bien Compra por si quieren que le orienten.
 
-
+<img src=./Gbook/Imagenes/3.PNG width=200px>
 <img src=./Gbook/Imagenes/4.PNG width=200px>
 Abajo podrá seleccionar una foto que tenga en su galería del móvil o si bien el usuario no tiene foto se añadirá una predeterminada
 
@@ -38,3 +38,8 @@ Si el usuario se ha cansado de su Nickname,o bien de su foto o simplemente no qu
 
 <img src=./Gbook/Imagenes/7.PNG width=200px>
 Mientras está realizando el update en la base de datos aparece un mario en movimiento como spinner
+
+<img src=./Gbook/Imagenes/8.PNG width=200px>
+Como vemos se ha actualizado con exito
+
+Con esto se acabaría la funcionalidad de mi Aplicación
