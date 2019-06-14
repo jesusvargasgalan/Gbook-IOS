@@ -139,26 +139,7 @@ class AddVideojuegoController : UIViewController , UIPickerViewDelegate , UIPick
     {
     showToast.mostrarToastInfo(controller: self, message: "Por favor introduce solo un título si ves que en la lista no aparece", seconds: 3)
     }
-   /* func addVideogameTitle(){
-        let db = Firestore.firestore()
         
-        
-        
-            if opinion == true{
-                db.collection("Videojuego").addDocument(data: ["Nombre" : textTitulo.text! , "Check" : "Opinion"])}
-            else {
-                db.collection("Videojuego").addDocument(data: ["Nombre" : textTitulo.text! , "Check" : "Compra"])}
-        
-        let storyboard = UIStoryboard(name: "Storyboard", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "TableViewCellViewController") as! TableViewCellViewController
-        vc.email = self.emailData
-        present(vc, animated: true, completion: nil)
-        
-        }
-    */
-    
-        
-
     func getTitles(){
          let db = Firestore.firestore()
         
@@ -194,6 +175,7 @@ class AddVideojuegoController : UIViewController , UIPickerViewDelegate , UIPick
         }
         
     }
+    
     func removeDuplicates(array: [String]) -> [String] {
         var encountered = Set<String>()
         var result: [String] = []
