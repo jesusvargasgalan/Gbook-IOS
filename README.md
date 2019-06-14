@@ -20,8 +20,9 @@ En esta pantalla se veran todos los post creados por los usuarios,como se apreci
 <h1>Dentro del post</h1>
 Esta pantalla tiene la particularidad de que podremos añadir comentarios y likes a las fotos
 
-*Este estilo no es el definitivo se subió una versión incorrecta
+
 <img src=./Gbook/Imagenes/5.PNG width=200px>
+*Este estilo no es el definitivo se subió una versión incorrecta
 
 <h1>Gbookear</h1>
 Aquí el usuario puede o bien elegir el juego desde el Pickerview que se va rellenando con datos que han introducido otros usuarios o bien puede introducir su juego propio, luego hay dos botones que checkean el tipo de post que quiere añadir,si bien es de Opinion para saber que piensan los demás usuarios o bien Compra por si quieren que le orienten.
