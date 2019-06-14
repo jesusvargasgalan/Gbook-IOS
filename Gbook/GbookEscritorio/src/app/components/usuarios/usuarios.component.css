@@ -1,0 +1,8 @@
+ @font-face {
+            font-family: Pixel;
+            src: url("../../../assets/ka1.ttf");
+        }
+div{
+    background-color: rgb(190, 185, 185);
+    font-family: Pixel;
+}

@@ -1,0 +1,66 @@
+ @font-face {
+            font-family: Pixel;
+            src: url("../assets/ka1.ttf");
+        }
+
+body {
+    width:100vw;
+    height: 100vh;
+    margin: 0;
+}
+video {
+  width: 100%;
+  height: auto;
+}
+h1{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  color: rgb(14, 15, 15);
+  font-size: 3vw;
+  text-align: center;
+  font-family: Pixel;
+  letter-spacing: 30px;
+  
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+app-videojuegos{
+  text-align: center;
+  width:100%;
+  height: auto;
+}
+videoFondo{
+  position: fixed;
+  z-index: -1;
+  
+}
+video {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+@media (min-aspect-ratio: 16/9){
+
+  videoFondo{
+    width: auto;
+    height: 100%;
+  }
+}
+@media (max-aspect-ratio: 16/9){
+
+  videoFondo{
+    width: auto;
+    height: 100%;
+  }
+}

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MainController" id="BYZ-38-t0r" customClass="MainController" customModule="GbookV2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qt7-M3-dCu">
+                                <rect key="frame" x="100" y="314" width="175" height="30"/>
+                                <color key="backgroundColor" red="0.87311627538071068" green="0.87311627538071068" blue="0.87311627538071068" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oQ1-YL-6En"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTu-X3-gOp">
+                                <rect key="frame" x="100" y="419" width="175" height="30"/>
+                                <color key="backgroundColor" red="0.92254290800000005" green="0.91499150399999996" blue="0.92062538199999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Registrarse">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnRegister:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e8I-4B-twL"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" restorationIdentifier="emailTextField" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Introduce tu usuario" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1za-Cl-GVO" userLabel="Usuario">
+                                <rect key="frame" x="50" y="170" width="275" height="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" restorationIdentifier="passwordTextField" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Introduce tu contraseña" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AYY-JX-5fU" userLabel="Contraseña">
+                                <rect key="frame" x="50" y="242" width="275" height="22"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AYY-JX-5fU" firstAttribute="trailing" secondItem="1za-Cl-GVO" secondAttribute="trailing" id="2Jf-Cr-3hZ"/>
+                            <constraint firstItem="aTu-X3-gOp" firstAttribute="top" secondItem="Qt7-M3-dCu" secondAttribute="bottom" constant="75" id="9B2-fa-skr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1za-Cl-GVO" secondAttribute="trailing" constant="50" id="H2f-nJ-E68"/>
+                            <constraint firstItem="Qt7-M3-dCu" firstAttribute="top" secondItem="AYY-JX-5fU" secondAttribute="bottom" constant="50" id="Na7-At-hRZ"/>
+                            <constraint firstItem="AYY-JX-5fU" firstAttribute="leading" secondItem="1za-Cl-GVO" secondAttribute="leading" id="Vpm-qA-FjY"/>
+                            <constraint firstItem="aTu-X3-gOp" firstAttribute="leading" secondItem="Qt7-M3-dCu" secondAttribute="leading" id="VuF-q4-xvf"/>
+                            <constraint firstItem="1za-Cl-GVO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="W1C-6Q-UHX"/>
+                            <constraint firstItem="1za-Cl-GVO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="gh4-VZ-C8x"/>
+                            <constraint firstItem="Qt7-M3-dCu" firstAttribute="trailing" secondItem="AYY-JX-5fU" secondAttribute="trailing" constant="-50" id="mfJ-Bi-qsq"/>
+                            <constraint firstItem="aTu-X3-gOp" firstAttribute="trailing" secondItem="Qt7-M3-dCu" secondAttribute="trailing" id="pi7-NN-dyz"/>
+                            <constraint firstItem="Qt7-M3-dCu" firstAttribute="leading" secondItem="AYY-JX-5fU" secondAttribute="leading" constant="50" id="rOG-70-w9o"/>
+                            <constraint firstItem="AYY-JX-5fU" firstAttribute="top" secondItem="1za-Cl-GVO" secondAttribute="bottom" constant="50" id="vjb-fe-Sgj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="loginButton" destination="Qt7-M3-dCu" id="2as-Ea-AIg"/>
+                        <outlet property="registerButton" destination="aTu-X3-gOp" id="23B-Uw-lXq"/>
+                        <outlet property="textEmail" destination="1za-Cl-GVO" id="ZWG-nW-Nox"/>
+                        <outlet property="textPassword" destination="AYY-JX-5fU" id="0u8-Dc-orP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="40.799999999999997" y="25.637181409295355"/>
+        </scene>
+    </scenes>
+</document>

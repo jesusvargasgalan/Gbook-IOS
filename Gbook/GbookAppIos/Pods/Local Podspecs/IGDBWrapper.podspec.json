@@ -1,0 +1,33 @@
+{
+  "name": "IGDBWrapper",
+  "version": "0.3.1",
+  "summary": "A Swift wrapper for the IGDB.com Free Video Game Database API.",
+  "description": "A Swift wrapper for the IGDB.com Free Video Game Database API. igdb.com",
+  "homepage": "https://github.com/igdb/igdb-api-swift",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Filip": "filip@igdb.com"
+  },
+  "source": {
+    "git": "https://github.com/igdb/igdb-api-swift.git",
+    "tag": "0.3.1"
+  },
+  "platforms": {
+    "ios": "8.0",
+    "watchos": "4.0"
+  },
+  "swift_version": "4.0",
+  "subspecs": [
+    {
+      "name": "Wrapper",
+      "source_files": "IGDBWrapper/Classes/Wrapper/*"
+    },
+    {
+      "name": "Structs",
+      "source_files": "IGDBWrapper/Classes/Structs/*"
+    }
+  ]
+}

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Videojuego Controller-->
+        <scene sceneID="Qye-sC-wVB">
+            <objects>
+                <viewController storyboardIdentifier="AddVideojuegoController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Yzc-P5-ERY" customClass="AddVideojuegoController" customModule="GbookV2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7g4-44-PPE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ve-W7-TJz">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VVw-Ck-Tfx">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Título videojuego" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qoZ-Oi-htQ">
+                                                <rect key="frame" x="94" y="33.5" width="132" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rMF-hI-lxH">
+                                                <rect key="frame" x="0.0" y="189" width="320" height="216"/>
+                                            </pickerView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6J-zk-gDS">
+                                                <rect key="frame" x="133.5" y="519" width="53" height="30"/>
+                                                <state key="normal" title="Postear"/>
+                                                <connections>
+                                                    <action selector="Add:" destination="Yzc-P5-ERY" eventType="touchUpInside" id="akw-lL-a7g"/>
+                                                </connections>
+                                            </button>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qCn-vH-xSM">
+                                                <rect key="frame" x="0.0" y="60.5" width="320" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Quieres orientación para una posible compra o sólo debatir sobre el juego?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vu-OJ-Gek">
+                                                <rect key="frame" x="8" y="107.5" width="304" height="43"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="43" id="xBf-dH-yjS"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ncy-6w-25R" customClass="DLRadioButton">
+                                                <rect key="frame" x="60" y="175.5" width="90" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="90" id="GtS-GL-Jas"/>
+                                                </constraints>
+                                                <state key="normal" title="Compra">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                                        <color key="value" red="1" green="0.046545039429999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="iconSquare" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="iconStrokeWidth">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="marginWidth">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="btnBuy:" destination="Yzc-P5-ERY" eventType="touchUpInside" id="FUX-dV-KIQ"/>
+                                                    <outletCollection property="otherButtons" destination="iaM-yJ-GPI" id="v7r-gb-val"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iaM-yJ-GPI" customClass="DLRadioButton">
+                                                <rect key="frame" x="180" y="175.5" width="80" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="L1Z-0P-T9T"/>
+                                                </constraints>
+                                                <state key="normal" title="Opinión">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                                        <color key="value" red="1" green="0.046545039429999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="iconSquare" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="marginWidth">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="btnOpinion:" destination="Yzc-P5-ERY" eventType="touchUpInside" id="g53-kd-VeK"/>
+                                                    <outletCollection property="otherButtons" destination="Ncy-6w-25R" id="sYP-mh-LF0"/>
+                                                </connections>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="jwx-x2-6Vr">
+                                                <rect key="frame" x="8" y="0.0" width="40" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info" translatesAutoresizingMaskIntoConstraints="NO" id="9AH-LS-Q7I">
+                                                <rect key="frame" x="234" y="14" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="Ko7-yV-j0H"/>
+                                                    <constraint firstAttribute="height" constant="40" id="gIe-Eg-UjI"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultGame" translatesAutoresizingMaskIntoConstraints="NO" id="pTW-5w-9SM">
+                                                <rect key="frame" x="67" y="370" width="186" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="Lzp-yR-IFE"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ych-HT-gS8">
+                                                <rect key="frame" x="122" y="465" width="76" height="30"/>
+                                                <state key="normal" title="Añadir foto"/>
+                                                <connections>
+                                                    <action selector="addImageVideogame:" destination="Yzc-P5-ERY" eventType="touchUpInside" id="7SF-BT-eu6"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="pTW-5w-9SM" firstAttribute="leading" secondItem="VVw-Ck-Tfx" secondAttribute="leading" constant="67" id="1gJ-OT-uDw"/>
+                                            <constraint firstAttribute="trailing" secondItem="qCn-vH-xSM" secondAttribute="trailing" id="2cj-Uv-nzh"/>
+                                            <constraint firstItem="iaM-yJ-GPI" firstAttribute="top" secondItem="2vu-OJ-Gek" secondAttribute="bottom" constant="25" id="2lk-9f-YHp"/>
+                                            <constraint firstItem="2vu-OJ-Gek" firstAttribute="top" secondItem="qCn-vH-xSM" secondAttribute="bottom" constant="17" id="9MQ-Fz-p56"/>
+                                            <constraint firstItem="R6J-zk-gDS" firstAttribute="centerX" secondItem="VVw-Ck-Tfx" secondAttribute="centerX" id="BsI-S9-ZtL"/>
+                                            <constraint firstItem="2vu-OJ-Gek" firstAttribute="centerX" secondItem="qCn-vH-xSM" secondAttribute="centerX" id="DIz-gH-p3R"/>
+                                            <constraint firstItem="qCn-vH-xSM" firstAttribute="top" secondItem="qoZ-Oi-htQ" secondAttribute="bottom" constant="6" id="DdM-Hx-YQA"/>
+                                            <constraint firstItem="2vu-OJ-Gek" firstAttribute="leading" secondItem="VVw-Ck-Tfx" secondAttribute="leadingMargin" id="F46-zJ-4hj"/>
+                                            <constraint firstItem="Ych-HT-gS8" firstAttribute="centerY" secondItem="VVw-Ck-Tfx" secondAttribute="centerY" constant="206" id="Fcf-Yy-MmC"/>
+                                            <constraint firstItem="rMF-hI-lxH" firstAttribute="centerX" secondItem="VVw-Ck-Tfx" secondAttribute="centerX" id="J8Q-45-Er7"/>
+                                            <constraint firstItem="rMF-hI-lxH" firstAttribute="centerY" secondItem="VVw-Ck-Tfx" secondAttribute="centerY" constant="23" id="Nws-nK-O29"/>
+                                            <constraint firstItem="Ych-HT-gS8" firstAttribute="centerX" secondItem="VVw-Ck-Tfx" secondAttribute="centerX" id="Omk-W0-phn"/>
+                                            <constraint firstItem="rMF-hI-lxH" firstAttribute="leading" secondItem="VVw-Ck-Tfx" secondAttribute="leading" id="PkL-22-iaU"/>
+                                            <constraint firstItem="Ncy-6w-25R" firstAttribute="leading" secondItem="VVw-Ck-Tfx" secondAttribute="leading" constant="60" id="QX1-Be-2qO"/>
+                                            <constraint firstItem="pTW-5w-9SM" firstAttribute="centerY" secondItem="VVw-Ck-Tfx" secondAttribute="centerY" constant="146" id="ZLJ-KG-KvI"/>
+                                            <constraint firstItem="qCn-vH-xSM" firstAttribute="top" secondItem="9AH-LS-Q7I" secondAttribute="bottom" constant="6.6699999999999999" id="aWW-OO-Du3"/>
+                                            <constraint firstItem="R6J-zk-gDS" firstAttribute="centerY" secondItem="VVw-Ck-Tfx" secondAttribute="centerY" constant="260" id="cXQ-wN-QOO"/>
+                                            <constraint firstItem="pTW-5w-9SM" firstAttribute="centerX" secondItem="VVw-Ck-Tfx" secondAttribute="centerX" id="eDs-L6-Mh3"/>
+                                            <constraint firstItem="9AH-LS-Q7I" firstAttribute="leading" secondItem="qoZ-Oi-htQ" secondAttribute="trailing" constant="8" id="eLR-wG-oXj"/>
+                                            <constraint firstItem="Ncy-6w-25R" firstAttribute="top" secondItem="2vu-OJ-Gek" secondAttribute="bottom" constant="25" id="fdg-Es-U4a"/>
+                                            <constraint firstItem="qoZ-Oi-htQ" firstAttribute="centerY" secondItem="VVw-Ck-Tfx" secondAttribute="centerY" constant="-230" id="kQo-aU-cOJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="iaM-yJ-GPI" secondAttribute="trailing" constant="60" id="lN5-Wi-ilR"/>
+                                            <constraint firstItem="qCn-vH-xSM" firstAttribute="leading" secondItem="VVw-Ck-Tfx" secondAttribute="leading" id="mt8-OP-ICH"/>
+                                            <constraint firstAttribute="trailing" secondItem="rMF-hI-lxH" secondAttribute="trailing" id="rCX-XB-7u3"/>
+                                            <constraint firstItem="qoZ-Oi-htQ" firstAttribute="centerX" secondItem="VVw-Ck-Tfx" secondAttribute="centerX" id="tbx-aC-xAD"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="VVw-Ck-Tfx" secondAttribute="bottom" id="2De-3a-PJM"/>
+                                    <constraint firstAttribute="trailing" secondItem="VVw-Ck-Tfx" secondAttribute="trailing" id="FE0-su-zPN"/>
+                                    <constraint firstItem="VVw-Ck-Tfx" firstAttribute="leading" secondItem="9Ve-W7-TJz" secondAttribute="leading" id="O5x-SF-XsP"/>
+                                    <constraint firstItem="VVw-Ck-Tfx" firstAttribute="centerY" secondItem="9Ve-W7-TJz" secondAttribute="centerY" id="YWq-D2-Kzv"/>
+                                    <constraint firstItem="VVw-Ck-Tfx" firstAttribute="height" secondItem="9Ve-W7-TJz" secondAttribute="height" priority="250" id="bdb-Li-J3j"/>
+                                    <constraint firstItem="VVw-Ck-Tfx" firstAttribute="width" secondItem="9Ve-W7-TJz" secondAttribute="width" id="bqe-Bs-za7"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mWV-tv-8ba" firstAttribute="trailing" secondItem="9Ve-W7-TJz" secondAttribute="trailing" id="5dm-yJ-V9g"/>
+                            <constraint firstItem="mWV-tv-8ba" firstAttribute="bottom" secondItem="9Ve-W7-TJz" secondAttribute="bottom" id="8y6-N8-4r3"/>
+                            <constraint firstItem="9Ve-W7-TJz" firstAttribute="top" secondItem="mWV-tv-8ba" secondAttribute="top" id="hYg-R7-Pnv"/>
+                            <constraint firstItem="9Ve-W7-TJz" firstAttribute="leading" secondItem="mWV-tv-8ba" secondAttribute="leading" id="yaw-ca-TpN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mWV-tv-8ba"/>
+                    </view>
+                    <connections>
+                        <outlet property="SelectVideogame" destination="rMF-hI-lxH" id="QEC-Wg-rsq"/>
+                        <outlet property="backButton" destination="jwx-x2-6Vr" id="72j-uF-Huw"/>
+                        <outlet property="infoButton" destination="9AH-LS-Q7I" id="zWU-9U-hoo"/>
+                        <outlet property="textTitulo" destination="qCn-vH-xSM" id="9uM-kf-qW8"/>
+                        <outlet property="videogameImage" destination="pTW-5w-9SM" id="eR5-ax-9f2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="71i-DC-F62" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-31.875" y="152.11267605633802"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back" width="512" height="512"/>
+        <image name="defaultGame" width="442" height="293"/>
+        <image name="info" width="225" height="225"/>
+    </resources>
+</document>

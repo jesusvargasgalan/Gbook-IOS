@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Principal View Controller-->
+        <scene sceneID="6w7-07-BmG">
+            <objects>
+                <tableViewController storyboardIdentifier="PrincipalPage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="G7H-aR-5Av" customClass="PrincipalViewController" customModule="GbookV2" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="bXb-j0-anY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="252" id="Tv7-Nh-U9W">
+                                <rect key="frame" x="0.0" y="28" width="320" height="252"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Tv7-Nh-U9W" id="4fd-LY-SyT">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="251.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wkr-dd-Vau">
+                                            <rect key="frame" x="66" y="39" width="186" height="212.5"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnS-Fp-wod">
+                                            <rect key="frame" x="66" y="11" width="42" height="31"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="a1" translatesAutoresizingMaskIntoConstraints="NO" id="ATI-G8-qbo">
+                                            <rect key="frame" x="22" y="11" width="24" height="31"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="ATI-G8-qbo" firstAttribute="top" secondItem="tnS-Fp-wod" secondAttribute="top" id="F21-9z-gpw"/>
+                                        <constraint firstItem="ATI-G8-qbo" firstAttribute="leading" secondItem="4fd-LY-SyT" secondAttribute="leadingMargin" constant="6" id="Fs2-oH-JZt"/>
+                                        <constraint firstItem="ATI-G8-qbo" firstAttribute="bottom" secondItem="tnS-Fp-wod" secondAttribute="bottom" id="QBt-Bu-b8R"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Wkr-dd-Vau" secondAttribute="bottom" constant="-10.5" id="e9Y-3i-iyj"/>
+                                        <constraint firstItem="tnS-Fp-wod" firstAttribute="leading" secondItem="ATI-G8-qbo" secondAttribute="trailing" constant="20" id="gF0-mk-crh"/>
+                                        <constraint firstItem="ATI-G8-qbo" firstAttribute="top" secondItem="4fd-LY-SyT" secondAttribute="topMargin" id="hVK-bV-Hgr"/>
+                                        <constraint firstItem="Wkr-dd-Vau" firstAttribute="centerX" secondItem="4fd-LY-SyT" secondAttribute="centerX" constant="-1" id="smI-Dt-2eO"/>
+                                        <constraint firstItem="Wkr-dd-Vau" firstAttribute="leading" secondItem="4fd-LY-SyT" secondAttribute="leadingMargin" constant="50" id="tB1-ZM-anS"/>
+                                        <constraint firstItem="Wkr-dd-Vau" firstAttribute="centerY" secondItem="4fd-LY-SyT" secondAttribute="centerY" constant="19.5" id="vkW-0P-tK8"/>
+                                        <constraint firstItem="Wkr-dd-Vau" firstAttribute="top" secondItem="tnS-Fp-wod" secondAttribute="bottom" constant="-3" id="xiW-1H-3k5"/>
+                                        <constraint firstItem="Wkr-dd-Vau" firstAttribute="leading" secondItem="tnS-Fp-wod" secondAttribute="leading" id="yUY-dJ-68N"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="G7H-aR-5Av" id="UHV-zf-eZl"/>
+                            <outlet property="delegate" destination="G7H-aR-5Av" id="sx5-dh-PWG"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3jm-1a-q2a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="144.80000000000001" y="128.18590704647679"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="a1" width="512" height="512"/>
+    </resources>
+</document>
