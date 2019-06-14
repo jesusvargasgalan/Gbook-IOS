@@ -27,9 +27,6 @@ Esta pantalla tiene la particularidad de que podremos añadir comentarios y like
 <h1>Gbookear</h1>
 Aquí el usuario puede o bien elegir el juego desde el Pickerview que se va rellenando con datos que han introducido otros usuarios o bien puede introducir su juego propio, luego hay dos botones que checkean el tipo de post que quiere añadir,si bien es de Opinion para saber que piensan los demás usuarios o bien Compra por si quieren que le orienten.
 
-<img src=./Gbook/Imagenes/3.PNG width=200px>
-
-Vemos como pepe ha subido el post que queria
 
 <img src=./Gbook/Imagenes/4.PNG width=200px>
 Abajo podrá seleccionar una foto que tenga en su galería del móvil o si bien el usuario no tiene foto se añadirá una predeterminada
