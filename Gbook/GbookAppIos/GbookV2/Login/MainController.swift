@@ -33,6 +33,7 @@ class MainController: UIViewController {
         
   
     }
+     //MARK: - Functions
     @IBAction func btnLogin(_ sender: UIButton) {
          self.loading.show("Cargando", gifimagename: "login")
         Auth.auth().signIn(withEmail: textEmail.text!,password: textPassword.text!)
@@ -60,30 +61,7 @@ class MainController: UIViewController {
         }
         
     }
-    //PASAR PARAMETRO DE UN CONTROLADOR A OTRO
-    
-    /*@IBAction func btnLogin(_ sender: UIButton) {
-        
-        Auth.auth().signIn(withEmail: textEmail.text!,password: textPassword.text!)
-        { (user, error) in
-            if error == nil{
-                let storyboard = UIStoryboard(name: "Modify", bundle: nil)
-                let vc = storyboard.instantiateViewController(withIdentifier: "ModifyController") as! ModifyController
-                vc.email = self.textEmail.text!
-                self.present(vc, animated: true, completion: nil)
-                
-                
-            }
-            else{
-                let alertController = UIAlertController(title: "Error", message: "El usuario o la contraseña introducida no es correcta", preferredStyle: .alert)
-                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-                
-                alertController.addAction(defaultAction)
-                self.present(alertController, animated: true, completion: nil)
-            }
-        }
-        
-    }*/
+
     
     
     
