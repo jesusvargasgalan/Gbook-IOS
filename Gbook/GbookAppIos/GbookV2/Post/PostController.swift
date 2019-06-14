@@ -74,8 +74,7 @@ class PostController: UIViewController {
         getPost()
         
         
-        //videogameImage.image = image
-        //titleVideogame.text = checkVideogame
+    
        
        
         let tapBackIconFlecha = UITapGestureRecognizer(target: self, action: #selector(backButtonTapped(tapBackIconFlecha:)))
@@ -95,19 +94,9 @@ class PostController: UIViewController {
         dislikeImage.isUserInteractionEnabled = true
         dislikeImage.addGestureRecognizer(buttonDislike)
         }
-        
-        
-        
-        
-        
-        
-        // Do any additional setup after loading the view.
+
     }
-   /* override func viewDidAppear(_ animated: Bool) {
-        getUser()
-        
-    }*/
-    
+   
     //MARK : Functions
     
 
@@ -258,13 +247,7 @@ class PostController: UIViewController {
         let totalLikes = String(suma)
         
         pulsado = true
-        
-       /* let storyboard = UIStoryboard(name: self, bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: self) as! self
-        present(vc, animated: true,completion: nil)*/
-       
-        
-        
+
         let db = Firestore.firestore()
         
         db.collection("Post").document(postDocumentId!).updateData([
@@ -284,51 +267,9 @@ class PostController: UIViewController {
     
     }
     
-    @objc func dislikeButtonTapped(tapDislike: UITapGestureRecognizer){
-        pulsado2 = true
-        let actualsdislikes = Int(numberDislikes!)
-        let suma = actualsdislikes! + 1
-        let totalDislikes = String(suma)
-        
-        
-        let myGroup = DispatchGroup()
-        myGroup.enter()
-        
-        
-        let db = Firestore.firestore()
-        
-        db.collection("Post").document(postDocumentId!).updateData([
-            "Dislikes" : totalDislikes
-            
-            
-        ]) { err in
-            if let err = err {
-                print("Error updating document: \(err)")
-            } else {
-                print("Document successfully updated")
-            }
-        }
-        myGroup.leave()
-        
-        
-        
-    }
     
 }
-
-
-    
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
+   
 
 extension PostController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
