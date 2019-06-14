@@ -198,12 +198,7 @@ class TableViewCellViewController: UIViewController {
                         
                         self.arrData.append(ChattModel(userName: self.userNameData!,gameTitle: self.nameData! , profileURL : self.imagen! , gameImage : self.imagen2!,checkGame : self.checkVideogameData!))
                         self.tableView.reloadData()
-                       
-                        
 
-                        
-                       
-                       
                         
                         
                     }
@@ -212,28 +207,11 @@ class TableViewCellViewController: UIViewController {
                     
                   
                 }
-          
-            
-            
+
         }
         
-       
-        
-    }
-        
-        
-    
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
-    */
 
 }
 
@@ -257,18 +235,6 @@ extension TableViewCellViewController:  UITableViewDelegate, UITableViewDataSour
         
         
     }
-   /* func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        let storyboard = UIStoryboard(name: "Post", bundle:nil)
-        let vc = storyboard.instantiateInitialViewController(withIdentifier: "PostController") as! PostController
-        
-        let postCell = tableView.dequeueReusableCell(withIdentifier: "PostViewCell", for: indexPath) as! TableViewCell
-        postCell.chatModel = arrData[indexPath.item]
-        
-        
-      
-        
-        present(vc, animated: true, completion:nil)
-    }*/
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "Post", bundle: nil)
