@@ -143,14 +143,7 @@ class RegistroController:UIViewController{
         
         self.present(imagePicker, animated: true , completion: nil)
     }
-    /*func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        
-        let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
-        avatarImage?.image = image
-        
-        self.dismiss(animated: true, completion: nil)
-        
-    }*/
+
     func assignbackground(){
         let background = UIImage(named: "pattern-4.png")
         
