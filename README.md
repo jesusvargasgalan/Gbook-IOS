@@ -5,7 +5,7 @@ Mi aplicación consiste en una red social en la cual los usuarios subirán fotos
 <h1>Login</h1>
 En la pantalla de login se comprueba que el usuario exista de no existir no dejará entrar
 
-<img src=./Imagenes/1.PNG width=600px>
+<img src=../Imagenes/1.PNG width=600px>
 
 <h1>Registro</h1>
 Aquí el usuario podrá formar parte de la red social Gbook con sus respectivos controles,(que no se repita el email,que las contraseñas coincidan,que los campos este rellenos,etc...)
