@@ -15,7 +15,7 @@ Aquí el usuario podrá formar parte de la red social Gbook con sus respectivos 
 <h1>Pantalla principal</h1>
 En esta pantalla se veran todos los post creados por los usuarios,como se aprecia se ve el icono de avatar seleccionado por el usuario,su nombre,si el post es de tipo compra u opinion y la imagen del juego (en este caso uso imágenes predeterminadas)
 
-
+<img src=./Gbook/Imagenes/8.PNG width=200px>
 
 <h1>Dentro del post</h1>
 Esta pantalla tiene la particularidad de que podremos añadir comentarios y likes a las fotos
@@ -37,8 +37,6 @@ Abajo podrá seleccionar una foto que tenga en su galería del móvil o si bien 
 Si el usuario se ha cansado de su Nickname,o bien de su foto o simplemente no quiere tener su nombre y apellido desde aquí podrá cambiar eso, al darle a modificar se modificará su nombre y su avatar en todos los post en los que haya comentado o haya creado
 <img src=./Gbook/Imagenes/6.PNG width=200px>
 
-Mientras está realizando el update en la base de datos aparece un mario en movimiento como spinner
-<img src=./Gbook/Imagenes/7.PNG width=200px>
 
-Vemos como pepe ha cambiado su nombre y su avatar de forma correcta
-<img src=./Gbook/Imagenes/8.PNG width=200px>
+<img src=./Gbook/Imagenes/7.PNG width=200px>
+Mientras está realizando el update en la base de datos aparece un mario en movimiento como spinner
