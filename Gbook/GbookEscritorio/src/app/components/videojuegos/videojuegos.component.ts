@@ -207,7 +207,7 @@ export class VideojuegosComponent implements OnInit {
                 labels: ["prueba@gmail.com", "prueba2@gmail.com", "jesus@gmail.com"],
                 datasets: [{
                     label: 'Fotos subidas por cada usuario',
-                    data: [this.countPhoto, this.countGame2, this.countGame3],
+                    data: [this.countPhoto, this.countPhoto2, this.countPhoto3],
                     backgroundColor: [
                         'rgba(255, 99, 132, 0.2)',
                         'rgba(54, 162, 235, 0.2)',
